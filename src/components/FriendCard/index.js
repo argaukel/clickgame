@@ -3,7 +3,7 @@ import "./style.css";
 
 function FriendCard(props) {
     return (
-            <div className="row">
+        <div className="row">
             {
                 props.friends.map(friend =>
                     (
@@ -11,7 +11,7 @@ function FriendCard(props) {
                             <div className="img-container">
                                 <img alt={friend.name} src={friend.image} />
                             </div>
-                            <div className="content">
+                            {/* <div className="content">
                                 <ul>
                                     <li>
                                         <strong>Name:</strong>
@@ -26,7 +26,7 @@ function FriendCard(props) {
                                         {friend.location}
                                     </li>
                                 </ul>
-                            </div>
+                            </div> */}
                         </div>
                     )
                 )
