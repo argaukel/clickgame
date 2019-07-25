@@ -9,7 +9,7 @@ function FriendCard(props) {
                     (
                         <div className="card" key={friend.id}>
                             <div className="img-container">
-                                <img alt={friend.name} src={friend.image} />
+                                <img onClick={props.handleClick} alt={friend.name} src={friend.image} />
                             </div>
                             {/* <div className="content">
                                 <ul>
